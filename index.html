@@ -214,68 +214,6 @@
         </div>
         <div class="flex justify-center -mt-4 mb-4"><button id="toggle-english-button" class="text-indigo-600 hover:text-indigo-800 font-semibold text-sm py-2 px-4">더 보기 ▼</button></div>
 
-        <!-- Learning Path Recommendation -->
-        <h2 class="text-2xl font-bold mb-4 mt-10 text-center text-gray-800">학습 방향 추천</h2>
-        
-        <div class="section-card">
-            <!-- Tab Buttons -->
-            <div class="border-b border-gray-200">
-                <nav id="subject-tabs" class="flex -mb-px" aria-label="Tabs">
-                    <button data-tab="math" class="tab-button active">
-                        <span class="text-2xl mr-2">📊</span> 수학 진도 분포
-                    </button>
-                    <button data-tab="english" class="tab-button">
-                        <span class="text-2xl mr-2">📈</span> 영어 레벨 분포
-                    </button>
-                </nav>
-            </div>
-
-            <!-- Tab Content -->
-            <div class="mt-6">
-                <!-- Math Content -->
-                <div id="math-content" class="tab-content active">
-                    <div class="flex flex-wrap justify-between items-center mb-4 gap-4">
-                        <div class="flex items-center flex-wrap gap-x-4 gap-y-2 text-sm">
-                            <div class="flex items-center"><span class="w-4 h-4 rounded-full bg-red-500 mr-2 flex-shrink-0"></span><span>나의 진도</span></div>
-                            <div class="flex items-center"><span class="w-4 h-4 rounded-sm bg-blue-200 mr-2 flex-shrink-0"></span><span>동학년 분포</span></div>
-                            <div class="flex items-center"><span class="w-4 h-4 rounded-sm border-2 border-yellow-500 mr-2 flex-shrink-0"></span><span>상위권 주요 진도</span></div>
-                        </div>
-                    </div>
-                    <div id="math-progress-grid" class="progress-grid" style="grid-template-columns: 80px repeat(4, 1fr);"></div>
-                    <div class="text-left text-xs text-gray-400 mt-2">*상위권: 동학년 목표달성장학생 수강 현황<br>*진도를 터치하면 나/동학년의 주요 진도를 확인할 수 있습니다.</div>
-                    <div class="bg-purple-50 border border-purple-200 rounded-lg p-6 mt-6">
-                        <h4 class="font-bold text-lg text-purple-800">💡 특목/자사고 합격자의 수학 학습 TIP</h4>
-                        <p class="mt-3 text-sm text-purple-700">
-                            <strong>특목/자사고에 합격한 엠베스트 회원들의 수학 학습 패턴을 분석한 결과, 현재 진도를 심화 강좌로 복습</strong>하는 경우가 대다수였고, <strong>심화 강좌를 개념 강좌와 동시에 학습</strong>하는 경우도 많았습니다.<br><br>
-                            또한 <strong>학기별 연계성이 강한 수학 특성상, 다음 학년의 내용을 미리 공부</strong>하는 비중도 높았습니다. (예시: 1학년 2학기와 2학년 2학기 학습 병행)<br><br>
-                            건우 학생의 수학 실력을 더욱 탄탄히 다지기 위해 필요한 강좌 혹은 추가 학습에 대해 함께 이야기 나누어 보시면 좋을 것 같습니다. 😎
-                        </p>
-                    </div>
-                </div>
-
-                <!-- English Content -->
-                <div id="english-content" class="tab-content">
-                    <div class="flex flex-wrap justify-between items-center mb-4 gap-4">
-                        <div class="flex items-center flex-wrap gap-x-4 gap-y-2 text-sm">
-                            <div class="flex items-center"><span class="w-4 h-4 rounded-full bg-red-500 mr-2 flex-shrink-0"></span><span>나의 레벨</span></div>
-                            <div class="flex items-center"><span class="w-4 h-4 rounded-sm bg-blue-200 mr-2 flex-shrink-0"></span><span>동학년 분포</span></div>
-                            <div class="flex items-center"><span class="w-4 h-4 rounded-sm border-2 border-yellow-500 mr-2 flex-shrink-0"></span><span>상위권 주요 레벨</span></div>
-                        </div>
-                    </div>
-                    <div id="english-level-grid" class="progress-grid" style="grid-template-columns: repeat(5, 1fr);"></div>
-                    <div class="text-left text-xs text-gray-400 mt-2">*상위권: 동학년 목표달성장학생 레벨 분포</div>
-                    <div class="bg-purple-50 border border-purple-200 rounded-lg p-6 mt-6">
-                        <h4 class="font-bold text-lg text-purple-800">💡 특목/자사고 합격자의 영어 학습 TIP</h4>
-                        <p class="mt-3 text-sm text-purple-700">
-                            <strong>특목/자사고 합격생들은 영어의 기본기를 탄탄하게 다지는 것을 가장 중요하게 생각합니다.</strong> 특히, 꾸준한 단어 암기와 문법 학습을 통해 독해의 정확성을 높이는 데 집중하는 경향을 보입니다.<br><br>
-                            또한, 현재 레벨에 만족하지 않고 <strong>한 단계 높은 수준의 지문을 미리 접하며 문제 해결 능력을 키우는 것</strong>도 상위권 학생들의 공통된 학습 패턴입니다.<br><br>
-                            건우 학생도 현재 학습에 더해, 매일 10개씩 새로운 단어를 암기하고, 주 1회 심화 독해 문제에 도전해보는 것은 어떨까요? 작은 습관이 큰 실력 차이를 만들 수 있습니다. 🚀
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- Educational Information -->
         <h2 class="text-2xl font-bold mb-4 mt-10 text-center text-gray-800">시기별 교육 정보</h2>
         <div class="section-card">
