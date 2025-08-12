@@ -290,6 +290,16 @@
 
     </main>
 
+    <!-- Footer Section -->
+    <footer class="text-center py-8 mt-4 text-sm text-gray-500 border-t border-gray-200">
+        <div class="mb-6">
+            <a href="https://yoongu-kang.github.io/mgreport-sample/" target="_blank" class="inline-block bg-gray-200 text-gray-700 font-semibold py-2 px-5 rounded-lg hover:bg-gray-300 transition-colors">
+                다른 샘플 리포트 보러가기
+            </a>
+        </div>
+        <p>&copy; 2025 Mbest. All Rights Reserved.</p>
+    </footer>
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             
@@ -423,21 +433,25 @@
                 english: document.getElementById('english-content')
             };
 
-            tabs.addEventListener('click', function(e) {
-                const button = e.target.closest('button');
-                if (!button) return;
+            if (tabs) {
+                tabs.addEventListener('click', function(e) {
+                    const button = e.target.closest('button');
+                    if (!button) return;
 
-                const tab = button.dataset.tab;
+                    const tab = button.dataset.tab;
 
-                tabs.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
-                button.classList.add('active');
+                    tabs.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
 
-                Object.values(tabContents).forEach(content => content.classList.remove('active'));
+                    Object.values(tabContents).forEach(content => {
+                        if(content) content.classList.remove('active');
+                    });
 
-                if (tabContents[tab]) {
-                    tabContents[tab].classList.add('active');
-                }
-            });
+                    if (tabContents[tab]) {
+                        tabContents[tab].classList.add('active');
+                    }
+                });
+            }
             // --- END: 탭 기능 ---
 
 
@@ -494,7 +508,7 @@
                     });
                 });
             }
-            createMathGrid();
+            if(mathGrid) createMathGrid();
             // --- END: 수학 진도 분포표 ---
 
             // --- START: 영어 레벨 분포표 ---
@@ -535,9 +549,9 @@
                     englishGrid.appendChild(cell);
                 });
             }
-            createAndRenderEnglishGrid();
+            if(englishGrid) createAndRenderEnglishGrid();
             // --- END: 영어 레벨 분포표 ---
         });
     </script>
 </body>
-</html>
+</ht
